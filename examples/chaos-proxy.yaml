@@ -1,0 +1,14 @@
+target: http://localhost:3000
+host: 127.0.0.1
+port: 8080
+latencyMs: 800
+jitterMs: 150
+errorRate: 0.20
+errorStatus: 503
+timeoutRate: 0.05
+timeoutMs: 3000
+rateLimit:
+  requests: 10
+  windowMs: 1000
+maxBodyBytes: 2097152
+statsPath: /__chaos/stats

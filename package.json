@@ -1,0 +1,12 @@
+{
+  "name": "chaos-proxy",
+  "version": "0.1.0",
+  "description": "A local TypeScript reverse proxy for injecting latency, errors, timeouts and rate limits.",
+  "type": "module",
+  "bin": {"chaos-proxy": "./dist/cli.js"},
+  "scripts": {"build":"tsc -p tsconfig.json","dev":"tsx src/cli.ts","start":"node dist/cli.js","test":"tsx --test tests/*.test.ts"},
+  "engines":{"node":">=20"},
+  "dependencies":{"commander":"^13.1.0","yaml":"^2.7.0"},
+  "devDependencies":{"@types/node":"^22.13.10","tsx":"^4.19.3","typescript":"^5.8.2"},
+  "license":"MIT"
+}
